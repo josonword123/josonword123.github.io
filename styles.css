@@ -86,11 +86,6 @@ body {
     border-bottom: 30px solid #f00;
 }
 
-
-
-
-
-
 #spin-btn {
     position: absolute;
     top: 100%;
@@ -98,4 +93,4 @@ body {
     transform: translateX(-50%);
     margin-top: 20px;
 }
-<link rel="stylesheet" href="styles.css">
+link rel="stylesheet" href="styles.css"

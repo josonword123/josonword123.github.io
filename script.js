@@ -20,4 +20,4 @@ function determinePrize(totalDegrees) {
         alert('第三獎');
     }
 }
-<script src="script.js"></script>
+script src="script.js"></script

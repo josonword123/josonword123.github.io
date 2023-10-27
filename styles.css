@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    position: relative;
+}
+
+.wheel-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    transform-origin: center;
+    transition: transform 3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.segment {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s1 {
+    transform: rotate(0deg);
+}
+
+.s2 {
+    transform: rotate(90deg);
+}
+
+.s3 {
+    transform: rotate(180deg);
+}
+
+.s4 {
+    transform: rotate(270deg);
+}
+
+.segment span {
+    transform: rotate(-45deg);
+    display: inline-block;
+    font-size: 20px;
+}
+
+.pointer {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 20px; 
+    height: 90px;
+    background-color: #f00;
+   transform: translateX(70%) translateY(-35%) rotate(45deg);
+    z-index: 1;
+}
+
+.pointer::before {
+    content: "";
+    position: absolute;
+    top: -30px; /* 修改箭頭部分的位置 */
+    left: -10px; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #f00;rent;
+    border-bottom: 30px solid #f00;
+}
+
+
+
+
+
+
+#spin-btn {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+<link rel="stylesheet" href="styles.css">
